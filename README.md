@@ -6,7 +6,7 @@ GSM's Academic Interactive Notification
 
 광주소프트웨어마이스터고등학교의 웹 애플리케이션
 
-기존 계획하던 GAIN에서 채팅 기능을 뺌으로써 디자인 또한 바뀐 
+기존 계획하던 GAIN에서 채팅 기능을 뺌으로써 디자인 또한 바뀐 애플리케이션
 
 ## Introduction / 개요
 
