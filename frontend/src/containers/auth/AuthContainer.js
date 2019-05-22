@@ -2,12 +2,14 @@
 import React from 'react';
 import * as Style from './AuthContainerStyle';
 
+import Signin from 'components/auth/signin';
+
 class AuthContainer extends React.Component {
     render(){
         return (
-            <Style.Wrapper>
-                aa
-            </Style.Wrapper>
+            <Style.BackGround>
+                <Signin />
+            </Style.BackGround>
         )
     }
 }
