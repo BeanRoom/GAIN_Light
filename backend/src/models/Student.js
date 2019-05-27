@@ -5,10 +5,17 @@ export const Student = (sequelize, DataTypes) => {
             primaryKey : true,
             allowNull : false
         },
-        stuNum : {
-            type : DataTypes.STRING(4),
-            allowNull : false,
-            unique : true
+        grade : {
+            type : DataTypes.STRING(1),
+            allowNull : false
+        },
+        class : {
+            type : DataTypes.STRING(1),
+            allowNull : false
+        },
+        number : {
+            type : DataTypes.STRING(2),
+            allowNull : false
         },
         name : {
             type : DataTypes.STRING(50),
