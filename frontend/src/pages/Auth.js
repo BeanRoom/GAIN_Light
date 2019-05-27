@@ -1,6 +1,6 @@
 // @flow
 import React from 'react';
-import AuthContainer from 'containers/auth';
+import AuthContainer from 'containers/auth/AuthContainer';
 
 class Auth extends React.Component{
     render(){
