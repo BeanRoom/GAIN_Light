@@ -1,13 +1,17 @@
 import Router from 'koa-router';
-import { Register, Login } from './auth.controller';
+import { CheckAuth, Login, RegStudent, RegTeacher, RegGuest  } from './auth.controller';
 
 const auth = new Router();
 
-auth.post('/register', Register);
+auth.post('/check', CheckAuth);
 auth.post('/login', Login);
-// auth.post('/login/local', authCtrl.localLogin);
+auth.post('/register/student', RegStudent);
+auth.post('/register/teacher', RegTeacher);
+auth.post('/register/guest', RegGuest);
+
+//auth.post('/login/local', authCtrl.localLogin);
 // auth.get('/exists/:key(email|username)/:value', authCtrl.exists);
 // auth.post('/logout', authCtrl.logout);
 // auth.get('/check', authCtrl.check);
 
-export default auth;
+export default auth;    

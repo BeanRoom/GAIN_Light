@@ -1,18 +1,18 @@
 export const Account = (sequelize, DataTypes) => {
     return sequelize.define('Account', {
-        id : {
-            type : DataTypes.STRING(50),
+        userCode : {
+            type : DataTypes.STRING(5),
             primaryKey : true,
             allowNull : false
+        },
+        id : {
+            type : DataTypes.STRING(50),
+            allowNull : false,
+            unique : true
         },
         password : {
             type : DataTypes.STRING,
             allowNull : false
-        },
-        userCode : {
-            type : DataTypes.STRING(5),
-            allowNull : false,
-            unique : true
         },
         auth : {
             type : DataTypes.INTEGER,
