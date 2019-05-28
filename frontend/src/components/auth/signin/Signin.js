@@ -1,15 +1,29 @@
 // @flow
 import React from 'react';
-import * as Style from './SigninStyle';
+import {
+    WhiteBox,
+    FormWrapper,
+    H1,
+    Form,
+    Input,
+    LoginButton
+} from './SigninStyle';
 
-class AuthContainer extends React.Component {
+class Signin extends React.Component {
     render(){
         return (
-            <>
-                bb
-            </>
+            <WhiteBox>
+                <FormWrapper>
+                    <H1>로그인</H1>
+                    <Form>
+                        <Input name="id" type="text" placeholder="Id"/>
+                        <Input name="password" type="password" placeholder="Password"/>
+                        <LoginButton>Login</LoginButton>
+                    </Form>
+                </FormWrapper>
+            </WhiteBox>
         )
     }
 }
 
-export default AuthContainer;
+export default Signin;
