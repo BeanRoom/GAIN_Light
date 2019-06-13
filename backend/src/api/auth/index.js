@@ -14,4 +14,4 @@ auth.post('/register/guest', RegGuest);
 // auth.post('/logout', authCtrl.logout);
 // auth.get('/check', authCtrl.check);
 
-export default auth;    
+export default auth;

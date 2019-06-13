@@ -1,7 +1,7 @@
 import Joi from 'joi';
 import crypto from 'crypto';
 import { account, student, teacher, guest } from '../../models';
-import { generateToken }from '../../lib/token.js'
+import { generateToken }from '../../lib/token.js';
 // .env 파일의 환경 변수 불러오기
 import dotenv from 'dotenv';
 dotenv.config();
