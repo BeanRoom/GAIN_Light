@@ -17,6 +17,7 @@
     "mariadb": "^2.0.4",
     "mongoose": "^5.5.0",
     "mysql": "^2.17.1",
+    "node-school-kr": "^2.1.1",
     "sequelize": "^5.7.5",
     "sequelize-cli": "^5.4.0"
   },
