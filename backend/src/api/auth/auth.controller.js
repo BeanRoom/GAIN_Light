@@ -104,7 +104,7 @@ export const RegStudent = async (ctx) => {
 
     console.log(`ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ\nid 값 : ${id}\npassword 값 : ${ctx.request.body.password}\nhash 값 : ${password2}\nuserCode 값 : ${userCode}\nauth 값 : ${auth}\nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ`);
     
-    // 데이터베이스에 값을 저장함.
+    // 데이터베이스에 값을 저장함.  
     account.create({
         "userCode" : userCode,
         "id" : id,
@@ -310,7 +310,7 @@ export const Login = async (ctx) => {
     // Joi 라이브러리를 활용해서 형식을 검사하기 위해 객체를 하나 만들어 줌.
     const LoginInput = Joi.object().keys({
         id : Joi.string().alphanum().min(5).max(50).required(),
-        password : Joi.string().min(5).max(50).required(),  
+        password : Joi.string().min(5).max(50).required()
     });
 
     // 넘어온 body의 형식을 검사한다.
